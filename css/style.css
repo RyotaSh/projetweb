@@ -28,6 +28,7 @@ header {
     justify-content: flex-start;
     align-items: center;
     z-index: 100;
+    background-color: black;
 }
 
 .logo {
@@ -39,15 +40,17 @@ header {
     padding: 6px 50px;
     border-radius: 20px;
     text-decoration: none;
-    color: black;
+    color: rgb(255, 243, 73);
+    z-index: 400px;
 }
 
 .navigation a:hover{
-    color: white;
+    color: rgb(255, 0, 0);
 }
 
 
 .slider {
+    margin-top: 200px;
     width: 1920px;
     height: 1080px;
     border-radius: 0px;
@@ -55,7 +58,7 @@ header {
 }
 
 .slides {
-    width: 600%;
+    width: 500%;
     height: 1080px;
     display: flex;
 }
@@ -84,7 +87,7 @@ header {
 
 .manuel-btn{
     border: 2px solid rgb(0, 0, 0);
-    padding: 5px;
+    padding: 15px;
     border-radius: 10px;
     cursor: pointer;
     transition: 1s;
@@ -112,4 +115,43 @@ header {
 }
 #radio5:checked ~ .first{
     margin-left: -80%;
+}
+
+.navigation-auto {
+    position: absolute;
+    display: flex;
+    width: 1920px;
+    justify-content: center;
+    margin-top: 1040px
+}
+    
+.navigation-auto div{
+    border: 2px solid rgb(0, 0, 0);
+    padding: 15px;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.navigation-auto div:not(:last-child) {
+    margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background: rgb(51, 224, 255);
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background: rgb(51, 224, 255);
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background: rgb(51, 224, 255);
+}
+
+#radio4:checked ~ .navigation-auto .auto-btn4{
+    background: rgb(51, 224, 255);
+}
+
+#radio5:checked ~ .navigation-auto .auto-btn5{
+    background: rgb(51, 224, 255);
 }
