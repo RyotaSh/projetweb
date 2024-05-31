@@ -10,24 +10,104 @@
 
 <body>
     <header>
-        <h2 class="Logo" scr="./accueil.html">Logo</h2>
+        <a href="https://www.dofus.com" class="logo_head">
+            <img alt="Logo_Dofus" src="../img/Dofus_Logo.png" height="135" width="200"></a>
         <nav class="navigation">
-            <a href="./accueil.html">Accueil</a>
-            <a href="./classes.html">Classes</a>
-            <a href="./metiers.html">Métiers</a>
-            <a href="https://www.dofus.com/fr/forum/">Forum</a>
+            <a href="./accueil.html" class="link_head">Accueil</a>
+            <a class="tiret"> - </a>
+            <a href="./classes.html" class="link_head">Classes</a>
+            <a class="tiret"> - </a>
+            <a href="./metiers.html" class="link_head">Métiers</a>
+            <a class="tiret"> - </a>
+            <a href="https://www.dofus.com/fr/forum/" class="link_head">Forum</a>
         </nav>
     </header>
 
-    <section>
+    <section class="dofus_slide">
 
+        <div class="slider">
+            <div class="slides">
+                <input type="radio" name="radiot-btn" id="radio1">
+                <input type="radio" name="radiot-btn" id="radio2">
+                <input type="radio" name="radiot-btn" id="radio3">
+                <input type="radio" name="radiot-btn" id="radio4">
+                <input type="radio" name="radiot-btn" id="radio5">
+
+                <div class="slide first">
+                    <img src="../img/slide1.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="../img/slide2.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="../img/slide3.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="../img/slide4.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="../img/slide5.jpg" alt="">
+                </div>
+
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                    <div class="auto-btn4"></div>
+                    <div class="auto-btn5"></div>
+                </div>
+                
+            </div>
+            <div class="navigation-manuel">
+                <label for="radio1" class="manuel-btn"></label>
+                <label for="radio2" class="manuel-btn"></label>
+                <label for="radio3" class="manuel-btn"></label>
+                <label for="radio4" class="manuel-btn"></label>
+                <label for="radio5" class="manuel-btn"></label>
+            </div>
+
+        </div>
+        <script src="../javascript/script.js"></script>
+        
+    </section>
+
+    <section>
+        <a class="transition"></a>
+    </section>
+
+    <section class="text_accueil">
+        <h1 class="msg_accueil">Bienvenue sur Dofus KickStarter !</h1>
+        <h3>Plongez dans l'univers captivant de Dofus avec notre guide ultime pour les nouveaux joueurs !</h3>
+        <h3>Que vous soyez totalement novice ou que vous cherchiez à perfectionner vos compétences,</h3>
+        <h3>notre site est conçu pour vous accompagner pas à pas dans vos premières aventures dans le Monde des Douze.</h3>
+        <h2>Ce que vous allez découvrir :</h2>
+        <ol>
+            <li>Les bases du jeu : Apprenez les mécanismes fondamentaux pour bien démarrer.</li>
+            <li>Les classes de personnages : Trouvez celle qui correspond le mieux à votre style de jeu.</li>
+            <li>Les quêtes et donjons : Guide complet pour progresser rapidement et efficacement.</li>
+            <li>Les astuces et conseils : Des stratégies de pro pour optimiser votre gameplay.</li>
+        </ol>
+        <h2> Prêt à devenir un maître de Dofus ? </h2>
+        <h3>Commencez votre aventure avec nos tutoriels détaillés et une communauté prête à vous aider.</h3>
+
+        <a href="../html/quete.html">Cliquez ici pour commencer votre quête !</a> 
     </section>
 
     <footer>
-    
+        <div class="footer_text">
+            <div class="logo_foot">
+                <a href="https://www.ankama.com">
+                    <img alt="Logo_Ankama" src="../img/ankama_logo.png" height="65" width="100"></a>
+            </div>
+            <nav class="footnav">
+                <a>© 2024 Ankama. Tous droits réservés.</a>
+            </nav>
+        </div>
     </footer>
 
-    <script src="script.js"></script>
+    
+
+    
 
 </body>
 </html>
