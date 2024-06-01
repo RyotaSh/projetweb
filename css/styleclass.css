@@ -8,55 +8,103 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     overflow-x: hidden;
-}
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 200px;
 
+
+}
 header {
     text-align: center;
     padding: 20px;
-}
-
-table {
-    margin-top: 20px;
-    width: 100%;
-    border-collapse: collapse;
-    text-align: center;
-}
-
-.image-container {
-    position: relative;
-    display: inline-block;
+    flex: 0 1 auto;
 }
 
 table img {
     width: 100px;
     height: 100px;
 }
-
-.overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    transition: .5s ease;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: "Bitstream Vera Serif Bold";
+table {
+    margin-top: 20px; 
 }
 
-.image-container:hover .overlay {
-    opacity: 1;
+.titretableau{
+    width: 623px; 
+    height: 75px; 
+
 }
 
-.titretableau {
-    width: 623px;
-    height: 75px;
+.descripersodiv {
+    background-color: aqua;
+    display: none;
+    border: 1px solid #000;
+    height: 190px;
+    width: 290px;
+    margin-left: 10px;
+  }
+  .descriperso {
+    cursor: pointer;
+}
+.descriperso:hover+div {
     display: block;
-    margin: 0 auto;
+  }
+
+  .footer {
+    background-color: black; 
+    color: rgb(255, 243, 73); 
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    position: fixed;
+    left:0px;
+    bottom:0;
+    height: 80px;
+
 }
+
+.footnav {
+    font-size: 15px;
+    border-radius: 20px;
+    color: rgb(255, 243, 73);
+}
+
+.footer_text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo_foot {
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+
+#myInput {
+    background-color: rgb(221, 240, 18);
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    width: 30%;
+    font-size: 16px;
+    padding: 12px 20px 12px 40px;
+    border: 1px solid #ddd;
+    margin-bottom: 12px;
+  }
+
+#champion {
+    background-color: rgb(233, 19, 19);
+}
+h2{
+    background-color:brown;
+    width: 15%;
+}
+
+#ulperso {
+    background-color: rgb(225, 236, 13);
+}
+
+.column {
+    float: left;
+    width: 20%; 
+    background-color:rgb(58, 59, 58)
+}   

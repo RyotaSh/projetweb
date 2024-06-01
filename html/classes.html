@@ -11,8 +11,8 @@
 
 <body>
     <header>
-        <a href="./accueil.html">
-            <img src="../img/Dofus_Logo.png" alt="Dofus Logo" class="Logo">
+        <a >
+            <img src="../img/Dofus_Logo.png" alt="Logo" class="Logo">
         </a>
         <nav class="navigation">
             <a href="./accueil.html">Accueil</a>
@@ -22,62 +22,156 @@
         </nav>
     </header>
     <main>
-        <img src="../img/titretableau.png" alt="Classes" class="titretableau">
-        <table>
-            <tr>
-                <td class="image-container">
-                    <img src="../img/roublard.png" alt="Roublard">
-                    <div class="overlay">Roublard</div>
-                </td>
-                <td class="image-container">
-                    <img src="../img/Xelor.png" alt="Xelor">
-                    <div class="overlay">Xelor</div>
-                </td>
-                <td class="image-container">
-                    <img src="../img/Eniripsia.png" alt="Eniripsia">
-                    <div class="overlay">Eniripsia</div>
-                </td>
-                <td class="image-container">
-                    <img src="../img/Cra.png" alt="Cra">
-                    <div class="overlay">Cra</div>
-                </td>
-                <td class="image-container">
-                    <img src="../img/Enutrof.png" alt="Enutrof">
-                    <div class="overlay">Enutrof</div>
-                </td>
-                <td class="image-container">
-                    <img src="../img/Feca.png" alt="Feca">
-                    <div class="overlay">Feca</div>
-                </td>
-            </tr>
-            <tr>
-                <td class="image-container">
-                    <img src="../img/Iop.png" alt="Iop">
-                    <div class="overlay">Iop</div>
-                </td>
-                <td class="image-container">
-                    <img src="../img/Osamodas.png" alt="Osamodas">
-                    <div class="overlay">Osamodas</div>
-                </td>
-                <td class="image-container">
-                    <img src="../img/Panda.png" alt="Panda">
-                    <div class="overlay">Panda</div>
-                </td>
-                <td class="image-container">
-                    <img src="../img/Sacrieur.png" alt="Sacrieur">
-                    <div class="overlay">Sacrieur</div>
-                </td>
-                <td class="image-container">
-                    <img src="../img/Sadida.png" alt="Sadida">
-                    <div class="overlay">Sadida</div>
-                </td>
-                <td class="image-container">
-                    <img src="../img/Sram.png" alt="Sram">
-                    <div class="overlay">Sram</div>
-                </td>
-            </tr>
-        </table>
+    <img src="../img/titretableau.png" alt="Votre autre image" class="titretableau">
+    
+    <table id="champion">
+        <tr>
+            <td>
+                <img class = "descriperso" id="Roublard" src="../img/roublard.png" alt="roublard" onclick="openPopup('../img/sortroublard.png')" >
+                <div class="descripersodiv">Membres d’un clan créé à l’origine par Raval et la famille Smisse,
+                     les Roublards ont finalement prêté allégeance au dieu Dralbour, 
+                     qui n’est autre que Sram. Maîtres de l’entourloupe, du coup fourré, 
+                     des bombes à retardement et des pistolets… les Roublards ne sont à l’aise qu’en terrain miné.</div>
+            </td>
+            <td>
+                <img class = "descriperso" id="Xelor" src="../img/Xelor.png" alt="Xelor" onclick="openPopup('../img/sort2.png')" >
+                <div class="descripersodiv"> Les Xélors sont des mages qui maîtrisent le temps et toutes les mécaniques qui donnent l'heure : 
+                    carillons, horloges, et pendules leur obéissent au doigt et à l'œil. 
+                    Les Xélors jouent donc avec le temps pour ralentir un ennemi ou se téléporter où bon leur semble.</div>
+            </td>
+            <td>
+                <img class = "descriperso" id= "Eniripsia" src="../img/Eniripsia.png" alt="enirispia" onclick="openPopup('../img/sort3.png')" >
+                <div class="descripersodiv">
+                    Les Eniripsas sont des guérisseurs qui soignent d'un simple Mot.
+                     Ils utilisent le pouvoir de la parole pour soulager les souffrances de leurs alliés, mais parfois aussi pour blesser leurs ennemis.
+                     Certains Eniripsas sont même devenus de véritables arpenteurs du verbe, des rôdeurs des langues oubliées.
+                </div>
+            </td>
+            <td>
+                <img class = "descriperso" id="Cra" src="../img/Cra.png" alt="Cra" onclick="openPopup('../img/sort4.png')" >
+                <div class="descripersodiv">
+                    Les Crâs sont des archers aussi fiers que précis ! Ils font des alliés précieux contre les adeptes de la mêlée franche.
+                     Restant à distance,
+                     décochant leurs traits empennés dans le moindre orifice laissé sans surveillance, ils ne laissent aucun répit à leurs adversaires !
+                </div>
+            </td>
+            <td>
+                <img class = "descriperso" id="Enutrof" src="../img/Enutrof.png" alt="Enutrof" onclick="openPopup('../img/sort5.png')" >
+                <div class="descripersodiv">
+                    Les Enutrofs sont des chasseurs de trésor avides de kamas, 
+                    qui malgré leur grand âge courent comme des dragodindes à la vue d'un coffre bien rempli.
+                     Ils sont experts dans l’art de ralentir leurs ennemis :
+                     ils peuvent ainsi les harceler avant de les assommer à grands coups de pelle le moment venu !
+                </div>
+            </td>
+            <td>
+                <img class = "descriperso" id="Feca" src="../img/Feca.png" alt="Feca" onclick="openPopup('../img/sort6.png')" >
+                <div class="descripersodiv">
+                    Les Fécas sont de loyaux protecteurs toujours sur la défensive. 
+                    Ils sont appréciés dans les groupes d'aventuriers pour leurs armures élémentaires et leur capacité à encaisser les coups durs. 
+                    Ils sont également maîtres dans l’art des signes magiques :
+                     quand il va y avoir du grabuge, les Fécas sortent leurs glyphes !
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img class = "descriperso" id="Iop"  src="../img/Iop.png" alt="Iop" onclick="openPopup('../img/sortroublard.png')" >
+                <div class="descripersodiv">
+                    Les Iops sont des guerriers fonceurs et sans reproche ! Une chose est sûre : les Iops savent faire parler les armes. 
+                    D'ailleurs, se retrouver pris dans une bagarre au moins une fois par jour est pour eux un signe de bonne santé.
+                     Leur tempérament impétueux fait des Iops des paladins de l'extrême, capables du meilleur... comme du pire !
+                </div>
+            </td>
+            <td>
+                <img class = "descriperso" id="Osamodas" src="../img/Osamodas.png" alt="Osamodas" onclick="openPopup('../img/sortroublard.png')" >
+                <div class="descripersodiv">
+                    Les Osamodas sont des dompteurs nés ! Ils ont le pouvoir d'invoquer des créatures et sont de remarquables dresseurs.
+                     Une rumeur prétend qu'ils taillent leurs vêtements dans la peau de leurs ennemis, mais allez donc leur demander ce qu'il en est… 
+                     Si vous êtes de son côté, un Osamodas sera aux petits soins pour vous.
+                     Dans le cas contraire, peut-être terminerez-vous votre vie sous la forme d'une botte ou d'un bonnet fourré.
+                </div>
+            </td>
+            <td>
+                <img class = "descriperso" id="Panda" src="../img/Panda.png" alt="Panda" onclick="openPopup('../img/sortroublard.png')" >
+                <div class="descripersodiv">
+                    Les Pandawas sont des guerriers adeptes des arts martiaux qui savent faire des folies de leurs corps !
+                     Ils peuvent même en faire avec le corps des autres… Le Pandawa sait comment soulever les foules, il porte ses alliés sur ses épaules pour mieux les protéger. 
+                    Quant à ses ennemis, il les enverra valser dans le décor, avant de fêter sa victoire avec une bonne rasade de lait de bambou !
+                </div>
+            </td>
+            <td>
+                <img class = "descriperso" id="Sacrieur" src="../img/Sacrieur.png" alt="Sacrieur" onclick="openPopup('../img/sortroublard.png')" >
+                <div class="descripersodiv">
+                    Les Sacrieurs sont des berserkers qui décuplent leurs forces dès qu'ils sont frappés !
+                     N'ayant pas peur de recevoir des coups, ni de s'exposer aux blessures, ils seront souvent en première ligne, prêts à verser le premier sang !
+                     Le Sacrieur est vraiment le compagnon idéal pour vos longues soirées guerrières…
+                </div>
+            </td>
+            <td>
+                <img class = "descriperso" id="Sadida" src="../img/Sadida.png" alt="Sadida" onclick="openPopup('../img/sortroublard.png')" >
+                <div class="descripersodiv">
+                    Les Sadidas sont des invocateurs qui empoisonnent la vie de leurs ennemis !
+                     Apprivoiser les Ronces pour en faire des armes terrifiantes,
+                      confectionner des poupées de guerre et de soins, voilà qui satisfait tout disciple Sadida digne de ce nom.
+                </div>
+            </td>
+            <td>
+                <img class = "descriperso" id="Sram" src="../img/Sram.png" alt="Sram" onclick="openPopup('../img/sortroublard.png')" >
+                <div class="descripersodiv">
+                    Les Srams sont des assassins qui aiment les bourses, rebondies de préférence.
+                     Trousser les pans d'une tunique, tâter le fond d'une poche, faire preuve de doigté, 
+                     palper enfin des bijoux tant convoités avant de poser un piège ou d'asséner un coup mortel, 
+                     voilà la vie d'un disciple de Sram !
+                </div>
+            </td>
+        </tr>
+    </table>
+
+    <input type="text" id="myInput" placeholder="Chercher un personnage...."/>
+
+
+    <h2>Liste des personnages :</h2>
+
+    <div class="column">
+        <ul>
+            <li>Roublard</li>
+            <li>Xelor</li>
+            <li>Eniripsia</li>
+            <li>Cra</li>
+            <li>Enutrof</li>
+            <li>Feca</li>
+        </ul>
+    </div>
+    
+    <div class="column">
+        <ul>
+            <li>Iop</li>
+            <li>Osamodas</li>
+            <li>Panda</li>
+            <li>Sacrieur</li>
+            <li>Sadida</li>
+            <li>Sram</li>
+        </ul>
+    </div>
     </main>
+
+
+    
+
+    <footer class="footer">
+        <div class="footer_text">
+            <div class="logo_foot">
+                <a href="https://www.ankama.com">
+                    <img alt="Logo_Ankama" src="../img/ankama_logo.png" height="65" width="100"></a>
+            </div>
+            <nav class="footnav">
+                <a>© 2024 Ankama. Tous droits réservés.</a>
+            </nav>
+        </div>
+    </footer>
+    <script src="../javascript/script.js"></script>
+
 </body>
 
 </html>
