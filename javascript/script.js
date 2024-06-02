@@ -24,3 +24,14 @@ input.addEventListener("keyup", function() {
 function openPopup(imageSrc) {
   window.open(imageSrc, "popup", "width=400,height=400");
 }
+
+
+
+var counter= 1;
+setInterval(function(){
+    document.getElementById('radio' + counter).checked = true;
+    counter++;
+    if(counter>5){
+        counter=1;
+    }
+}, 5000);
