@@ -137,11 +137,12 @@ function popup() {
         } else {
 
         alert('envoyé , vous recevrez prochainement les informations!');
-        document.querySelector('.informations').reset();    }
+        document.querySelector('.informations').reset();    
         // incrementation automatique du nombre de joueur inscrit a chaque fois que l'utilisateur reussi son formulaire
         let nombre = parseInt(document.getElementById('compteurJoueurs').innerText.split(':')[1].trim());
         nombre++;
         document.getElementById('compteurJoueurs').innerText = "Joueurs inscrits : " + nombre;
+    }
 
 }
 
