@@ -8,13 +8,13 @@ table img {
     height: 100px;
 }
 table {
-    margin-top: 150px; 
-}
-
-.titretableau{
-    width: 623px; 
-    height: 75px; 
-
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-content: start; 
+    margin-top: 200px; 
+    margin-left: auto;
+    margin-right: auto;
 }
 
 

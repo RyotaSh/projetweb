@@ -43,3 +43,71 @@ function afficherinfos(){
    var infoAlchimiste = document.getElementsByClassName("info_alchimiste")[0];
    infoAlchimiste.style.display= "block";
 }
+
+
+function showElement(activeClass) {
+    const allClasses = [
+        "info_alchimiste",
+        "info_bucheron",
+        "info_chasseur",
+        "info_mineur",
+        "info_paysan",
+        "info_pecheur",
+        "info_cordonnier",
+        "info_forgeron",
+        "info_sculpteur",
+        "info_bijoutier",
+        "info_bricoleur"
+    ];
+
+    allClasses.forEach(className => {
+        const element = document.getElementsByClassName(className)[0];
+        if (element) {
+            element.style.display = (className === activeClass) ? "block" : "none";
+        }
+    });
+}
+
+function showAlchimiste() {
+    showElement("info_alchimiste");
+}
+
+function showBucheron() {
+    showElement("info_bucheron");
+}
+
+function showChasseur() {
+    showElement("info_chasseur");
+}
+
+function showMineur() {
+    showElement("info_mineur");
+}
+
+function showPaysan() {
+    showElement("info_paysan");
+}
+
+function showPecheur() {
+    showElement("info_pecheur");
+}
+
+function showCordonnier() {
+    showElement("info_cordonnier");
+}
+
+function showForgeron() {
+    showElement("info_forgeron");
+}
+
+function showSculpteur() {
+    showElement("info_sculpteur");
+}
+
+function showBijoutier() {
+    showElement("info_bijoutier");
+}
+
+function showBricoleur() {
+    showElement("info_bricoleur");
+}
