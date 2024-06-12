@@ -3,30 +3,12 @@
     src: url("https://mdn.github.io/css-examples/web-fonts/VeraSeBd.ttf");
 }
 
-body {
-    background-image: url(../img/Background.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    overflow-x: hidden;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 200px;
-
-
-}
-header {
-    text-align: center;
-    padding: 20px;
-    flex: 0 1 auto;
-}
-
 table img {
     width: 100px;
     height: 100px;
 }
 table {
-    margin-top: 20px; 
+    margin-top: 150px; 
 }
 
 .titretableau{
@@ -35,56 +17,29 @@ table {
 
 }
 
+
 .descripersodiv {
-    background-color: aqua;
+    background-color: rgb(3, 3, 3);
     display: none;
-    border: 1px solid #000;
-    height: 190px;
+    border: 1px solid rgb(255, 243, 73);
+    height: autopx;
     width: 290px;
     margin-left: 10px;
   }
+
   .descriperso {
     cursor: pointer;
 }
+
 .descriperso:hover+div {
     display: block;
   }
 
-  .footer {
-    background-color: black; 
-    color: rgb(255, 243, 73); 
-    text-align: center;
-    padding: 20px;
-    width: 100%;
-    position: fixed;
-    left:0px;
-    bottom:0;
-    height: 80px;
-
-}
-
-.footnav {
-    font-size: 15px;
-    border-radius: 20px;
-    color: rgb(255, 243, 73);
-}
-
-.footer_text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.logo_foot {
-    flex-direction: row;
-    margin-bottom: 10px;
-}
-
 #myInput {
-    background-color: rgb(221, 240, 18);
+    background-color: rgb(0, 0, 0);
     background-position: 10px 10px;
     background-repeat: no-repeat;
-    width: 30%;
+    width: 300px;
     font-size: 16px;
     padding: 12px 20px 12px 40px;
     border: 1px solid #ddd;
@@ -92,11 +47,11 @@ table {
   }
 
 #champion {
-    background-color: rgb(233, 19, 19);
+    background-color: rgb(0, 0, 0);
 }
 h2{
     background-color:brown;
-    width: 15%;
+    width: 300px;
 }
 
 #ulperso {
@@ -104,7 +59,8 @@ h2{
 }
 
 .column {
+    margin-left: 20px;
     float: left;
     width: 20%; 
-    background-color:rgb(58, 59, 58)
+
 }   

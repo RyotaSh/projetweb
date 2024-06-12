@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dofus - Accueil</title>
     <link rel="stylesheet" href="../css/style.css">
+    <script defer src="../javascript/script.js"></script>
 </head>
 
 <body>
     <header>
-        <a href="https://www.dofus.com" class="logo_head">
+        <a href="../html/accueil.html" class="logo_head">
             <img alt="Logo_Dofus" src="../img/Dofus_Logo.png" height="135" width="200"></a>
         <nav class="navigation">
             <a href="./accueil.html" class="link_head">Accueil</a>
@@ -24,7 +25,59 @@
     </header>
 
 
-    
+    <form class="informations">
+        <fieldset>Informations</fieldset>
+        <ul>
+            <li>
+                <label for="last_name">Nom de Famille&nbsp;:</label>
+                <input type="text" id="last_name" name="user_last_name"/>
+            </li>
+            <li>
+                <label for="mail">E-mail&nbsp;:</label>
+                <input type="email" id="mail" name="user_mail" />
+            </li>
+            <li>
+                <label for="favorite_character">Personnage Favori&nbsp;:</label>
+                <select name="favorite_character" id="favorite_character"> 
+                    <option value="1">Eniripsia</option>
+                    <option value="2">Enutrof</option>
+                    <option value="3">Feca</option>
+                    <option value="4">Iop</option>
+                    <option value="5">Osamodas</option>
+                    <option value="6">Pandawa</option>
+                    <option value="7">Roublard</option>
+                    <option value="8">Sram</option>
+                    <option value="9">Xelor</option>
+                    <option value="10">Sadida</option>
+                    <option value="11">Sacrieur</option>
+                    <option value="12">Cra</option>
+
+                </select>    
+            </li>
+            <li>
+                <label for="favorite_job">Métier Favori&nbsp;:</label>
+                <select name="favorite_job" id="favorite_job">
+                    <option value="1">Alchimiste</option>
+                    <option value="2">Forgeron</option>
+                    <option value="3">Mineur</option>
+                    <option value="4">Bûcheron</option>
+                    <option value="5">Bijoutier</option>
+                    <option value="6">Pêcheur</option>
+                    <option value="7">Chasseur</option>
+                    <option value="8">Bricoleur</option>
+                    <option value="9">Cordonnier</option>
+                    <option value="10">Paysan</option>
+                    <option value="11">Sculpteur</option>
+                </select>
+            </li>
+            <li>
+                <label for="msg">Commentaire&nbsp;:</label>
+                <textarea id="msg" name="user_message"></textarea>
+            </li>
+        </ul>
+    </form>
+
+
     <footer>
         <div class="footer_text">
             <div class="logo_foot">
@@ -40,6 +93,5 @@
     
 
     
-
 </body>
 </html>
