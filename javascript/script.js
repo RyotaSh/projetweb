@@ -113,8 +113,35 @@ function showBricoleur() {
 }
 
 
-function popup() {
-    alert('envoyé , vous recevrez prochainement les informations !');
-    // Réinitialise le formulaire
-    document.querySelector('.informations').reset();
+function validateEmail(email) {
+    const re = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    return re.test(String(email).toLowerCase());
 }
+
+function initialiserCompteur() {
+    // Générer un nombre aléatoire entre 500 et 5000 pour le compteur initial
+    let joueurInscrit = Math.floor(Math.random() * (5000 - 500 + 1)) + 500;
+    document.getElementById('compteurJoueurs').innerText += joueurInscrit;
+}
+function popup() {
+    const form = document.getElementById('infoForm');
+    const email = document.getElementById('mail').value;
+    const lastName = document.getElementById('last_name').value;
+    const favoriteCharacter = document.getElementById('favorite_character').value;
+    const favoriteJob = document.getElementById('favorite_job').value;
+    const message = document.getElementById('msg').value;
+
+    if (!lastName || !validateEmail(email) || !favoriteCharacter || !favoriteJob || !message) {
+        alert('Veuillez remplir correctement tous les champs du formulaire.');
+        document.querySelector('.informations').reset();
+        } else {
+
+        alert('envoyé , vous recevrez prochainement les informations!');
+        document.querySelector('.informations').reset();    }
+        // incrementation automatique du nombre de joueur inscrit a chaque fois que l'utilisateur reussi son formulaire
+        let nombre = parseInt(document.getElementById('compteurJoueurs').innerText.split(':')[1].trim());
+        nombre++;
+        document.getElementById('compteurJoueurs').innerText = "Joueurs inscrits : " + nombre;
+
+}
+

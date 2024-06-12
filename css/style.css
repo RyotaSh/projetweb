@@ -396,3 +396,11 @@ header {
 .info_bricoleur{
     display: none;
 }
+
+#compteurJoueurs{
+    background-color: aqua;
+}
+
+#submitBtn {
+    background-color: red;
+}
