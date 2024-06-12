@@ -281,6 +281,7 @@ header {
     transition: transform 200ms ease-out;
     width: 175px;
     text-align: center;
+    cursor: pointer;
 }
 
 .block_text {
@@ -304,4 +305,6 @@ header {
     margin-bottom: 3px;
 }
 
-
+.info_alchimiste {
+    display: none;
+}

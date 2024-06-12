@@ -38,5 +38,8 @@ setInterval(function(){
 
 
 
-
-
+document.getElementsByClassName("block_metier_1")[0].onclick = function (){afficherinfos()};
+function afficherinfos(){
+   var infoAlchimiste = document.getElementsByClassName("info_alchimiste")[0];
+   infoAlchimiste.style.display= "block";
+}
