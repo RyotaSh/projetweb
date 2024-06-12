@@ -13,10 +13,12 @@
 }
 
 body {
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
     min-height: 100vh;
     overflow-x: hidden;
 }
+
+/* HEADER */
 
 header {
     position: absolute;
@@ -28,7 +30,7 @@ header {
     justify-content: flex-start;
     align-items: center;
     z-index: 100;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(37, 37, 37);
 }
 
 
@@ -53,6 +55,8 @@ header {
     pointer-events: none;
 }
 
+
+/* SLIDER */
 
 .slider {
     margin-top: 200px;
@@ -162,11 +166,12 @@ header {
 }
 
 
+/* FOOTER */
 
 .footer {
     height: 80px;
     width: 100%;
-    background-color: black; 
+    background-color: rgb(37, 37, 37); 
     text-align: center;
     position: fixed;
     bottom: 0;
@@ -190,6 +195,26 @@ header {
     margin-bottom: 10px;
 }
 
+.apropos_html {
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}
+
+.apropos_html table {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+
+#apropos_margin {
+    margin-top: 400px;
+}
+
+
+/* ACCUEIL */
+
 .transition {
     position:absolute;
     background-color: rgb(161, 161, 143);
@@ -200,9 +225,9 @@ header {
 
 
 .text_accueil {
-    margin-top: 30px;
+    margin-top: 80px;
     width: 100%;
-    height: 800px;
+    height: 500px;
     background-color: rgb(0, 0, 0);
     color: rgb(255, 243, 73);
     text-align: center;
@@ -220,7 +245,7 @@ header {
 
 }
 
-
+/* INFORMATIONS DE LA QUETE*/
 .informations {
     margin-top: 250px;
     margin-left: auto;
@@ -230,6 +255,8 @@ header {
     background-color: rgb(48, 48, 48);
     border-radius: 20px;
     border:rgb(255, 243, 73) solid 5px;
+    color: yellow;
+    text-align: center;
 }
 
 .informations fieldset {
@@ -245,22 +272,41 @@ header {
     list-style: none;
 }
 
+#submitBtn {
+    margin-top: 29px;
+    color: white;
+    background-color: red;
+    padding: 6px 10px;
+}
 
 
+#compteurJoueurs{
+    color: white;
+    background-color: rgb(54, 54, 54);
+    font-size: 25px;
+    text-align: center;
+    padding: 20px 20px;
+    border : 5px solid rgb(163, 163, 163);
+    border-radius: 40px;
+    margin-top: 40px;
+    margin-bottom: 100px;
+}
+
+
+
+
+/* METIERS*/
 
 .blocks {
     margin-top: 200px;
     width: 100%;
-    background: white;
+    background: linear-gradient(to right, rgb(0, 124, 52) 0%, rgb(0, 168, 219) 100%);
     border-radius: 15px;
     box-shadow: 0px 10px 20px 20px rgb(0, 0, 0, 0.17);
     display: inline-block;
     padding: 30px 35px;
     perspective: 1800px;
     text-align: left;
-    transform-origin: 50% 50%;
-    transform-style: preserve-3d;
-    transform: rotateX(11 deg) rotateY(16,5 deg);
     min-width: 595px;
 }
 
@@ -271,11 +317,7 @@ header {
     display: inline-block;
     height: 175px;
     overflow: hidden;
-    perspective: 1200px;
     position: relative;
-    transform-style: preserve-3d;
-    transform: translateZ(35px);
-    transition: transform 200ms ease-out;
     width: 175px;
     text-align: center;
     cursor: pointer;
@@ -303,6 +345,7 @@ header {
 }
 
 #info_metier {
+    background-color: black;
     margin-top: 50px;
     width: 100%;
     height: auto;
@@ -318,7 +361,7 @@ header {
     height: 200px;
     border: 15px solid rgb(0, 255, 98);
     border-radius: 40px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 #info_metier .block_imgb {
@@ -326,7 +369,7 @@ header {
     height: 200px;
     border: 15px solid rgb(40, 195, 241);
     border-radius: 40px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 #info_metier  ~ h2+p {
@@ -341,14 +384,18 @@ header {
 }
 
 #info_metier h2{
+    margin-top: 30px;
+    margin-bottom: 20px;
     color: rgb(255, 243, 73);
     text-decoration:overline underline;
     font-size: 30px;
 }
 
 #info_metier p{
+    color: white;
     margin-left: 20px;
     margin-right: 20px;
+    margin-bottom: 40px;
     font-size: 20px;
 }
 
@@ -397,10 +444,55 @@ header {
     display: none;
 }
 
-#compteurJoueurs{
-    background-color: aqua;
+
+/*Illustrations Accueil*/
+
+#illustration_fin {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 80px;
 }
 
-#submitBtn {
-    background-color: red;
+#illustrations_accueil {
+    margin-top: 80px;
+    margin-bottom: 80px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+.illustration_quete {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 80px;
+}
+
+.illustration1 {
+    border: 10px blue solid;
+}
+
+.illustration1:hover {
+    border: 10px rgb(255, 255, 255) solid;
+}
+
+.illustration2 {
+    border: 10px red solid;
+}
+
+.illustration2:hover {
+    border: 10px rgb(255, 255, 255) solid;
+}
+
+.illustration3 {
+    border: 10px lightgreen solid;
+}
+
+.illustration3:hover {
+    border: 10px rgb(255, 255, 255) solid;
 }
