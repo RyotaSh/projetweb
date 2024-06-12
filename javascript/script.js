@@ -111,3 +111,10 @@ function showBijoutier() {
 function showBricoleur() {
     showElement("info_bricoleur");
 }
+
+
+function popup() {
+    alert('envoyé , vous recevrez prochainement les informations !');
+    // Réinitialise le formulaire
+    document.querySelector('.informations').reset();
+}

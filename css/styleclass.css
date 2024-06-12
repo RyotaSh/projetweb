@@ -25,6 +25,7 @@ table {
     height: autopx;
     width: 290px;
     margin-left: 10px;
+    color : white ;
   }
 
   .descriperso {
@@ -44,6 +45,7 @@ table {
     padding: 12px 20px 12px 40px;
     border: 1px solid #ddd;
     margin-bottom: 12px;
+    color : white;
   }
 
 #champion {
